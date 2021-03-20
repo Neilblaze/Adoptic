@@ -58,9 +58,6 @@ function adjustFontSize() {
   document.getElementById('text').style.fontSize = fontSize + 'px';
 }
 
-function modelReady(){
-	let story = "<strong>Have you ever heard about the term nano electronics?</strong> </br> For me, the answer is Yes! The field of nanoelectronics has been slowly growing in recent years and is the answer to the increasing demand for electronics to be smaller, yet still maintain a high performance. Nanomaterial-based components can be made much smaller than those made of traditional bulkier materials, which helps to reduce the overall size of the electronic device. Moreover, many nanomaterials are stable in most environments, whether it’s in a sensor within a harsh chemical processing environment, or in an electronic device that gives out a lot of residual heat to the internal components. While there are many areas of nanoelectronics, some of the more widely studied systems include nanomaterial-inspired energy storage and energy generation systems, various types of nanosized and molecular transistors, optoelectronic devices, and flexible/printable circuits—where the nanomaterials are often formulated into an ink and printed. Future applications will most likely include various quantum technologies if they can be realized on a commercial level, and we are likely to see an increase in the production of smaller components for classic computing systems and everyday technologies.";
-  select('#text').html(story);
-}
+
 
 
