@@ -1,0 +1,30 @@
+{
+  "name": "adoptic",
+  "version": "1.0.0",
+  "description": "HackPSU Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neilblaze/adoptic.git"
+  },
+  "keywords": [
+    "Adoptic",
+    "HackPSU"
+  ],
+  "author": "Neilblaze",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neilblaze/adoptic/issues"
+  },
+  "homepage": "https://github.com/Neilblaze/adoptic#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
