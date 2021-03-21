@@ -58,6 +58,14 @@ function adjustFontSize() {
   document.getElementById('text').style.fontSize = fontSize + 'px';
 }
 
+function modelReady(){
+	let story = new FileReader(); 
+            fl.onload=function(){ 
+                document.getElementById('output') 
+                        .textContent=fl.result; 
+            }fl.readAsText(this.files[0]); 
+  select('#text').html(story);
+}
 
 
 
