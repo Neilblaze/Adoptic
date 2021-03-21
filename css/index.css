@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+body{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.pdf_section{
+    height: 100%;
+}
+#pdf_container{
+    display: none;
+}
+
+h1 { text-align: center; }
+
+#pdf_url{
+    width: 60%;
+    padding: 12px 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.body_element{
+    display: block;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+#pdf_viewer{
+    background: white;
+    width: 75%;
+}
+#command_panel{
+    background: #040b20;
+    color: #f1f1f1;
+    width: 25%;
+}
+
+#pdf_canvas{
+    border: gray 1px solid;
+    position: absolute;
+}
+
+#faceImg{
+    background: #040b20;
+    height: 30%;
+    margin-left: 10%;
+    margin-top: 5%;
+    position: relative;
+    width: 80%;
+    border: 5px solid#040b20;
+}
+
+#cameraImg{
+    /*background: #6ce315;*/
+    float: left;
+    height: 30%;
+    position: relative;
+    width: 100%;
+
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+}
+
+#actionsTilte
+{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#legendGrid{
+    margin-left: 15%;
+    width: 70%;
+}
+
+#legendGrid img{
+    width: 45%;
+}
+
+#legendGrid td{
+    text-align: center;
+}
+
+#actionsContainer{
+    display: none;
+}
+
+.action_selected{
+    background: #ffe94ae0;
+    color: black;
+    font-weight: bold;
+}
+
+#pageNumb{
+    background: #00000063;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;
+}
+
+#pdf_url_form a
+{
+    color: #fff;
+    padding: 1em;
+    border: navajowhite;
+    background-color: #0c0516;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+#demo_title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.book_demo{
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+    border: 2px solid #000;  
+    border-radius: 20px; 
+}
+
+.book_demo img{
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+}
+
+#pdf_demos{
+    width: 90%;
+    margin-left: 5%;
+    height: 55%;
+    border: 5px solid #000;
+    border-radius: 20px;
+    margin-top: 1em;
+    padding: 1%;
+    background-color: #0be3cd;
+}
+
+.cstm{
+    text-align-last: center;
+    margin-top: 30px;
+    padding-left: 35px;
+}
+
+
+.cardz {
+    box-shadow: 0rem .5rem 1rem rgba(0,0,0,.3);
+    background-color: #fff;
+  
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+      transform: scale(0.95);
+  }
+  
+  .cardz:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 1rem 2rem rgba(0,0,0,0.2);
+    transform: scale(1);
+    cursor: pointer;
+  }
