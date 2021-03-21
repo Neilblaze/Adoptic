@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adoptic — Reader</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Neilblaze/Adoptic/tf-view/public/favicon.png">
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+<div class="body_element" id="pdf_viewer">
+    <div class="pdf_section" id="pdf_opener">
+        <h1><img src="imgs/logo.png" width="40"/> &nbsp;Adoptic — Reader 👁️</h1>
+        <center><form id="pdf_url_form" style="margin-top: 50px;">
+            <label for="pdf_url">PDF URL</label>
+            <input type="text" id="pdf_url" name="pdf_url" placeholder="Insert pdf link &amp; click Go!">
+            <a class="slide">Go ➡</a>
+        </form></center>
+        <div id="pdf_demos" style="margin-top: 40px;">
+            <center><p id="demo_title">Sample PDFs</p></center>
+            
+            <div class="book_demo cardz" id="lorem_pdf"><img src="imgs/lorem_ipsum.png"/></div>
+            <div class="book_demo cardz" id="wasteMan_pdf"><img src="imgs/wasteman.png"/></div>
+            <div class="book_demo cardz" id="tintin_pdf"><img src="imgs/tintin_congo.png"/></div>
+        </div>
+        <center><a href="https://hackpsu.org/"><img class="cstm" src="imgs/xD.png" width="200" /></a></center>
+    </div>
+    
+    <div  class="pdf_section" id="pdf_container">
+        <div id="pageNumb"><p></p></div>
+        <canvas id="pdf_canvas"></canvas>
+    </div>
+</div>
+<div class="body_element" id="command_panel">
+    <canvas id="faceImg"></canvas>
+    <video id="cameraImg"></video>
+    <div id="actionsContainer">
+        <p id="actionsTilte">Actions</p>
+        <table id="legendGrid">
+            <tr>
+                <td id="scrollUpTD">
+                    <img src="imgs/face_up.png">
+                    <p>Scroll up</p>
+                </td>
+                <td id="scrollDownTD">
+                    <img src="imgs/face_down.png">
+                    <p>Scroll down</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="scrollLeftTD">
+                    <img src="imgs/face_left.png">
+                    <p>Page left</p>
+                </td>
+                <td  id="scrollRightTD">
+                    <img src="imgs/face_right.png">
+                    <p>Page right</p>
+                </td>
+            </tr>
+            <tr>
+                <td id="scrollTiltLeftTD">
+                    <img src="imgs/face_tilt_left.png">
+                    <p>Zoom in</p>
+                </td>
+                <td id="scrollTiltRightTD">
+                    <img src="imgs/face_tilt_right.png">
+                    <p>Zoom out</p>
+                </td>
+            </tr>
+            <tr><center><a href="https://adoptic.herokuapp.com/"><img src="imgs/eye-icon.png" width="70"/></a></center></tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.min.js"></script>
+<script src="js/face-api.js"></script>
+<script src="js/FaceDetector.js"></script>
+<script src="js/PDFRender.js"></script>
+<script src="js/index.js"></script>
+<!--<script src="js/opencv.js"></script>-->
+</html>
